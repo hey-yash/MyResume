@@ -1,0 +1,7 @@
+  {% load static %}
+
+body {
+  background-image: url('/static/images/background.jpg');
+  background-size: cover;
+  padding-top: 60px;
+}

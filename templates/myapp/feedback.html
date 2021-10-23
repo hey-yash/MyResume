@@ -1,0 +1,35 @@
+{% extends "myapp/base.html" %}
+
+{% block page_title %}
+Feedback
+{% endblock page_title %}
+
+{% block body_block %}
+
+<div class="container">
+  <div class="jumbotron">
+      <h2>Hey! Please fill out the form</h2><br>
+      <form method="POST">{% csrf_token %} 
+        <div class="form-group row">
+          <label for="fname" class="col-sm-8 col-form-label">First Name : {{ form.firstname }}</label>
+        </div>
+        <div class="form-group row">
+          <label for="lname" class="col-sm-8 col-form-label">Last Name : {{ form.lastname }}</label>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-8 col-form-label">Email : {{ form.email }}</label>
+        </div>
+        <div class="form-group row">
+          <label for="rate" class="col-sm-8 col-form-label">Rate My Site : {{ form.rating }}</label>
+        </div>
+        <div class="form-group row">
+          <label for="comments" class="col-sm-8 col-form-label">Suggestions are welcome! {{ form.comments }}</label>
+        </div>
+        <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+      </form>
+  </div>
+</div>
+
+{% endblock %}

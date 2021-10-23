@@ -1,0 +1,29 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block page_title %}
+Home
+{% endblock page_title%}
+
+{% block links %}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<style media="screen">
+  #welcome {
+    color: #023610;
+    text-align: center;
+    font-size: 700%;
+    padding: 150px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+</style>
+{% endblock links %}
+
+{% block body_block %}
+
+<p class="animate__animated animate__bounce animate__backInDown" id ="welcome">WELCOME</p>
+
+
+{% endblock %}

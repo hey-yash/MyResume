@@ -1,0 +1,11 @@
+.welcome {
+  color: green;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
