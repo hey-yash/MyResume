@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>{% block page_title %}{% endblock page_title %}</title>
     {% block links %} {% endblock links %}
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -15,13 +18,21 @@
           <!-- <li><span class="glyphicon">YASH DWIVEDI</span> </li> -->
           <li><a href="{% url 'myapp:index' %}"><span class="glyphicon glyphicon-log-in"></span> HOME</a></li>
           <li><a href="{% url 'myapp:about' %}"><span class="glyphicon glyphicon-log-in"></span> ABOUT</a></li>
-          <li><a href="{% url 'myapp:resume' %}"><span class="glyphicon glyphicon-log-in"></span> RESUME</a></li>
           <li><a href="{% url 'myapp:skills' %}"><span class="glyphicon glyphicon-log-in"></span> SKILLS</a></li>
           <li><a href="{% url 'myapp:projects' %}"><span class="glyphicon glyphicon-log-in"></span> PROJECTS</a></li>
           <li><a href="{% url 'myapp:feedback' %}"><span class="glyphicon glyphicon-log-in"></span> FEEDBACK</a></li>
         </ul>
       </div>
     </nav>
+
+    <ul class="socialIcons">
+      <li class="twitter"><a href="https://twitter.com/HeyYash05"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+      <li class="instagram"><a href="https://www.instagram.com/heyyash05/"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/yashd/"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a></li>
+      <li class="github"><a href="https://github.com/hey-yash"><i class="fa fa-fw fa-github"></i>Github</a></li>
+      <li class="whatsapp"><a href="https://wa.me/qr/Q5FVCZUNQSUWP1"><i class="fa fa-fw fa-whatsapp"></i>Whatsapp</a></li>
+    </ul>
+
 
     {% block body_block %}
 

@@ -1,9 +1,27 @@
 {% extends "myapp/base.html" %}
+{% load static %}
 
 {% block page_title %}
 About
 {% endblock page_title %}
 
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock links %}
+
 {% block body_block %}
-<h1>This is about page</h1>
-{% endblock %}
+<div class="container">
+  <div class="junbotron">
+    <h1>About Me</h1>
+    <h3>Hi! My name is Yash Dwivedi.
+      I’m a graduate of 2018 from Bharathi Vidyapeeth College of Engineering, Pune with a degree in Electronics Engineering.
+      I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering.
+      In my free time I like working on open source projects.</h3>
+
+      <form method="get" action="{% static 'media/Yash_Resume.pdf' %}">
+        <button class="btn" style="width:75%"><i class="fa fa-download"></i> Download Resume</button>
+      </form>
+  </div>
+</div>
+
+{% endblock body_block%}

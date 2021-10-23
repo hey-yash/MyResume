@@ -1,7 +1,71 @@
   {% load static %}
 
 body {
+  background-color: black;
   background-image: url('/static/images/background.jpg');
   background-size: cover;
   padding-top: 60px;
+}
+
+ul.socialIcons {
+  padding: 0;
+  text-align: right;
+}
+
+.socialIcons li {
+  background-color: black;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding:  0em;
+  min-width: 1.28571429em;
+  max-width: 1.28571429em;
+  height: 1.28571429em;
+  white-space: nowrap;
+  line-height: 1.5em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 0.5em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 2em;
+}
+
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .linkedin {
+  background-color: #0e76a8;
+  box-shadow: 0 0 16px #0e76a8;
+}
+
+.socialIcons .github {
+  background-color: #333;
+  box-shadow: 0 0 16px #0e76a8;
+}
+
+.socialIcons .whatsapp {
+  background-color: #25D366;
+  box-shadow: 0 0 16px #0e76a8;
 }
