@@ -1,9 +1,24 @@
-/* Style download button */
+/* .my_resume {
+  image-resolution: from-image;
+} */
+.box {
+   display: flex;
+   align-items:center;
+}
+
+.img-circle {
+  vertical-align: middle;
+  display: inline;
+  border: 7px solid black;
+  width:  30%;
+  height: auto;
+}
+
 .btn {
   background-color: DodgerBlue;
   border: none;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
   font-size: 40px;
 }
@@ -11,4 +26,13 @@
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
+}
+
+.about {
+  padding: 0% 0% 10% 0%;
+  justify-content: space-between;
+}
+
+.resume {
+  padding-bottom: 10%;
 }
