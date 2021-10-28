@@ -1,9 +1,72 @@
 {% extends "myapp/base.html" %}
+{% load static %}
 
 {% block page_title %}
 Skills
 {% endblock page_title %}
 
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock links %}
+
 {% block body_block %}
-<h1>This is about page</h1>
+
+<div class="skills">
+  <strong>Skills</strong><br>
+</div>
+<div class="skills2">
+  <strong>What I'm Good @</strong><br>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-15">
+            <div class="review__rating__stats">
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">Python</strong>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">Django</strong>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  </div>
+                </div>
+                </div>
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">HTML</strong>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">CSS</strong>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">Oracle</strong>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="review__rating__progress">
+                  <strong class="review__rating__level">Unix</strong>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

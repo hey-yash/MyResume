@@ -1,0 +1,45 @@
+.skills {
+  text-align: center;
+  font-size: 80px;
+  margin: 0%
+}
+
+.skills2 {
+  text-align: center;
+  font-size: 50px;
+  margin: 1% 0% 1% 0%;
+}
+
+.review__rating__progress {
+    display:  contents;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__rating__progress .review__rating__count {
+    /* 10% is the default width for the level and count labels */
+    flex: 1 1 0%;
+    font-size: 8px;
+}
+
+.review__rating__progress .review__rating__level {
+    text-align: right;
+}
+
+.review__rating__progress .progress {
+    margin: 2% 10% 2% 10%;
+    flex-grow: 8;
+    background: #010024;
+}
+
+.review__rating__progress .review__rating__level {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.progress {
+  width: 80%;
+  height: auto;
+}

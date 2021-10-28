@@ -9,6 +9,12 @@ body {
   background-size: cover;
 }
 
+.nav-me {
+  font-size: 200%;
+  color: white;
+  align: center;
+}
+
 ul.socialIcons {
   padding: 40px;
   text-align: right;
