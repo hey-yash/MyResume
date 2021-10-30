@@ -1,9 +1,19 @@
 {% extends "myapp/base.html" %}
+{% load static %}
 
 {% block page_title %}
 Projects
 {% endblock page_title %}
 
+{% block links_top %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock links_top %}
+
 {% block body_block %}
-<h1>This is projects page</h1>
+<div class="card">
+  <div class="container">
+    <h4><b>Mediation Tech Upgrade</b></h4>
+    <p>Role: Developer</p>
+  </div>
+</div>
 {% endblock %}

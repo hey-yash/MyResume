@@ -1,6 +1,9 @@
-/* .my_resume {
-  image-resolution: from-image;
-} */
+.about_head {
+  text-align: center;
+  font-size: 80px;
+  margin: 0%
+}
+
 .box {
    display: flex;
    align-items:center;
@@ -15,17 +18,17 @@
 }
 
 .btn {
-  background-color: DodgerBlue;
+  background-color: #35c91e;
   border: none;
   color: white;
   padding: 10px 30px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #41ff24;
 }
 
 .about {

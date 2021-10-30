@@ -1,18 +1,38 @@
   {% load static %}
 
-body {
+/* body {
   background-color: black;
   background-image: url('/static/images/background.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+body {
+	background: linear-gradient(-45deg, #fff4e0, #ffdea1, #3af2c8, #adffec);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .nav-me {
   font-size: 200%;
   color: white;
   align: center;
+  margin-top: 3%;
 }
 
 ul.socialIcons {
@@ -24,7 +44,7 @@ ul.socialIcons {
   background-color: black;
   list-style: none;
   display: inline-block;
-  margin: 15px;
+  margin: 1.5% 1%;
   border-radius: 2em;
   overflow: hidden;
 }

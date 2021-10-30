@@ -30,7 +30,7 @@
 .review__rating__progress .progress {
     margin: 2% 10% 2% 10%;
     flex-grow: 8;
-    background: #010024;
+    background: Black;
 }
 
 .review__rating__progress .review__rating__level {
