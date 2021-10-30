@@ -13,8 +13,9 @@
   vertical-align: middle;
   display: inline;
   border: 7px solid black;
-  width:  30%;
-  height: auto;
+  width:  300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .btn {
